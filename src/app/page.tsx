@@ -43,7 +43,7 @@ export default function Home() {
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
-                className="z-10 flex flex-col items-center gap-10 max-w-md w-full text-center"
+                className="z-10 flex flex-col items-center gap-10 max-w-2xl w-full text-center"
             >
                 {/* Logo Area */}
                 <motion.div variants={itemVariants} className="relative">
@@ -66,10 +66,10 @@ export default function Home() {
 
                 {/* Title and Description */}
                 <motion.div variants={itemVariants} className="space-y-4">
-                    <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-white whitespace-nowrap">
+                    <h1 className="text-3xl md:text-7xl font-bold tracking-tight text-white whitespace-nowrap">
                         The <span className="text-gradient">Recursion</span> Community
                     </h1>
-                    <p className="text-white/40 text-sm md:text-base font-medium tracking-wide">
+                    <p className="text-white/60 text-lg md:text-xl font-semibold tracking-wide">
                         A space for developers to loop together.
                     </p>
                 </motion.div>
@@ -92,8 +92,8 @@ export default function Home() {
                 {/* Footer simple tag */}
                 <motion.div variants={itemVariants} className="flex flex-col items-center gap-4 mt-4">
                     <div className="h-px w-12 bg-white/10" />
-                    <p className="text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase text-white/30 flex items-center gap-2">
-                        <Hash size={14} className="text-brand-cyan/50" /> Iterate • Evolve • Repeat
+                    <p className="text-xs md:text-sm font-semibold tracking-[0.25em] uppercase text-white/50 flex items-center gap-2">
+                        <Hash size={16} className="text-brand-cyan/70" weight="bold" /> Iterate • Evolve • Repeat
                     </p>
                 </motion.div>
             </motion.div>
